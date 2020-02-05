@@ -1,0 +1,46 @@
+table {
+  table-layout: fixed;
+}
+
+.table {
+  border-top: 1px solid map-get($theme-colors, 'lighter-grey');
+
+  thead {
+    th {
+      border-bottom: 1px solid map-get($theme-colors, 'lighter-grey');
+      padding: $spacing-3 0;
+      color: map-get($theme-colors, 'indigo-sherwin-williams');
+      background-color: map-get($theme-colors, 'lightest-grey');
+      font-size: map-get($font-size-map, 'xxs');
+    }
+  }
+
+  tbody {
+    tr {
+      cursor: pointer;
+      td {
+        padding-left: 0;
+        background-color: map-get($theme-colors, 'white');
+        padding-top: $spacing-3;
+        padding-bottom: $spacing-3;
+        border-bottom: 1px solid map-get($theme-colors, 'lighter-grey');
+        color: map-get($theme-colors, 'indigo-sherwin-williams');
+      }
+    }
+  }
+
+  table.nested {
+    tbody {
+      tr {
+        td {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  &__filter-label {
+    left: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.outlet-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__name, &__id {
+    color: map-get($theme-colors, 'white');
+  }
+
+  &__name {
+    overflow: hidden;
+  }
+
+  &__link {
+    max-height: 77px;
+    padding: $spacing-3;
+    color: map-get($theme-colors, 'info');
+    &:hover, &:focus, &.nuxt-link-active {
+      cursor: pointer;
+      background-color: darken(map-get($theme-colors, 'sea-sparkle-valspar'), 35%);
+      .outlet-card__id, .outlet-card__name {
+        color: map-get($theme-colors, 'white');
+      }
+    }
+  }
+}

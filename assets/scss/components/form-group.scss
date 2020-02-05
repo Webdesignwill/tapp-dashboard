@@ -1,0 +1,15 @@
+.form-group {
+  &.error {
+    color: map-get($theme-colors, 'text-danger');
+
+    input {
+      border-color: map-get($theme-colors, 'text-danger');
+      color: map-get($theme-colors, 'text-danger');
+    }
+  }
+
+  .updating-icon, .disabled-icon {
+    position: absolute;
+    right: $spacing-2;
+  }
+}

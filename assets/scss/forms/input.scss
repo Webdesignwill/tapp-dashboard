@@ -1,0 +1,29 @@
+input[type="text"] {
+  color: map-get($theme-colors, 'indigo-sherwin-williams');
+  transition: border $transition-speed;
+  width: 100%;
+  border: 0;
+  height: 40px;
+  border-radius: 0;
+  text-indent: $spacing-3;
+  background-color: map-get($theme-colors, 'white');
+  border: 1px solid map-get($theme-colors, 'lighter-grey');
+
+  &.saved {
+    border-color: map-get($theme-colors, 'text-success');
+  }
+
+  &.disabled, &:disabled {
+    border-color: map-get($theme-colors, 'lighter-grey');
+    cursor: not-allowed;
+    color: map-get($theme-colors, 'grey')
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: map-get($theme-colors, 'lighter-grey');
+  }
+}

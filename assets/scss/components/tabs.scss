@@ -1,0 +1,23 @@
+.tabs {
+  margin-left: -$spacing-3;
+  &__tab {
+    transition: border-color $transition-speed;
+    border-bottom: 3px solid map-get($theme-colors, 'white');
+    color: map-get($theme-colors, 'info');
+    &.active {
+      border-color: map-get($theme-colors, 'info')
+    }
+
+    a {
+      transition: color $transition-speed;
+      color: map-get($theme-colors, 'indigo-sherwin-williams');
+    }
+
+    &:hover, &:focus {
+      border-color: map-get($theme-colors, 'info');
+      a {
+        color: map-get($theme-colors, 'info');
+      }
+    }
+  }
+}

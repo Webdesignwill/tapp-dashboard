@@ -1,0 +1,6 @@
+a {
+  color: map-get($theme-colors, 'info');
+  &:hover {
+    text-decoration: none;
+  }
+}

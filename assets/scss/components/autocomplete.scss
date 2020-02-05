@@ -1,0 +1,24 @@
+.autocomplete {
+  position: absolute;
+  top: 100%;
+  z-index: 3000;
+  margin-top: -1px;
+  margin-bottom: 0;
+  background-color: map-get($theme-colors, 'white');
+  width: 100%;
+  max-height: 410px;
+  overflow-y: scroll;
+  border: 1px solid map-get($theme-colors, 'lighter-grey');
+  border-top: none;
+
+  &__item {
+    cursor: pointer;
+    &.is-active, &:hover {
+      background-color: lighten(map-get($theme-colors, 'sonata-pittsburgh'), 20%);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid map-get($theme-colors, 'lighter-grey');
+    }
+  }
+}

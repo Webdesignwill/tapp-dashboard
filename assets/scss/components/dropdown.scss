@@ -1,0 +1,27 @@
+.dropdown, .dropup {
+  .dropdown-toggle {
+    color: map-get($theme-colors, 'indigo-sherwin-williams');
+    &:after {
+      margin-left: $spacing-3;
+      vertical-align: inherit;
+      color: map-get($theme-colors, 'color-indigo-sherwin-williams');
+    }
+  }
+
+  &-menu {
+    border-radius: 0;
+    li {
+      a {
+        color: map-get($theme-colors, 'dark-grey');
+      }
+    }
+  }
+
+  &.show {
+    .dropdown-toggle {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

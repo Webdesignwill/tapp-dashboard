@@ -1,0 +1,54 @@
+$_list-item-height: 36px;
+
+.filter-bar {
+  flex-basis: 20%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  background-color: lighten(map-get($theme-colors, 'sonata-pittsburgh'), 18%);
+  color: map-get($theme-colors, 'indigo-sherwin-williams');
+
+  &__more {
+    cursor: pointer;
+  }
+
+  &__list {
+    max-height: 5 * $_list-item-height;
+    overflow: hidden;
+
+    &.expanded {
+      height: auto;
+      max-height: inherit;
+    }
+
+    &-item {
+      cursor: pointer;
+      height: $_list-item-height;
+
+
+      &:after {
+        transition: transform $transition-speed;
+        background: map-get($theme-colors, 'sonata-pittsburgh');
+        width: 15px;
+        height: 15px;
+        content: '';
+        margin-right: 10px;
+        margin-top: 1px;
+      }
+
+      &:hover, &:focus, &.selected {
+        color: map-get($theme-colors, 'white');
+        background-color: map-get($theme-colors, 'sonata-pittsburgh');
+        &:after {
+          background: map-get($theme-colors, 'white');
+        }
+      }
+
+      &.selected {
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

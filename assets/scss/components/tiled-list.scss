@@ -1,0 +1,14 @@
+.tiled-list {
+  border-bottom: 1px solid map-get($theme-colors, 'grey');
+  &__tile {
+    background-color: map-get($theme-colors, 'white');
+    padding: $spacing-3;
+    height: 100px;
+    border-top: 1px solid map-get($theme-colors, 'grey');
+
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: map-get($theme-colors, 'light-grey');
+    }
+  }
+}

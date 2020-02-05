@@ -1,0 +1,27 @@
+$closedSidebarOffset: 80px;
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  color: map-get($theme-colors, 'indigo-sherwin-williams');
+}
+
+body {
+  background-color: map-get($theme-colors, 'lightest-grey');
+
+  #__nuxt, #__layout, .main-container, .application-wrapper {
+    height: 100%;
+  }
+
+  .main-container {
+    transition: transform #{$transition-speed};
+    transform: translateX($closedSidebarOffset);
+    margin-right: $closedSidebarOffset;
+  }
+
+  &.active-sidebar {
+    .main-container {
+      transform: translateX($sidebarWidth);
+    }
+  }
+}

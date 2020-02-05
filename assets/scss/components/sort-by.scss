@@ -1,0 +1,18 @@
+.sort-by {
+  cursor: pointer;
+  .material-icons {
+    height: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__remove {
+    font-size: 15px;
+  }
+
+  &:hover, &:focus {
+    .material-icons {
+      color: map-get($theme-colors, 'sonata-pittsburgh');
+    }
+  }
+}

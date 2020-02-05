@@ -1,0 +1,27 @@
+.search-container {
+  position: relative;
+
+  .search-icon {
+    position: absolute;
+    left: $spacing-3;
+  }
+
+  input[type="text"] {
+    border-left: none !important;
+    border-right: none !important;
+    text-indent: $spacing-4 !important;
+    height: 60px;
+    padding-left: $spacing-4;
+  }
+
+  &.large {
+    input {
+      text-indent: 35px !important;
+      padding-left: $spacing-3;
+    }
+
+    .search-icon {
+      left: $spacing-3;
+    }
+  }
+}

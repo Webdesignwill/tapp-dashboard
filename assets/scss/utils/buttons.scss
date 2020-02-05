@@ -1,0 +1,6 @@
+.btn-outline-dark {
+  @include button-variant(
+    map-get($theme-colors, "indigo-sherwin-williams"),
+    map-get($theme-colors, "indigo-sherwin-williams")
+  );
+}

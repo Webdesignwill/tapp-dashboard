@@ -1,0 +1,18 @@
+@each $key, $color in $theme-colors {
+
+  .color-#{$key} {
+    color: $color !important;
+  }
+
+  .bg-color-#{$key} {
+    background-color: $color;
+  }
+
+  @each $bp, $breakpoint in $grid-breakpoints {
+    @include media-breakpoint-up($bp) {
+      .bg-color-#{$bp}-#{$key} {
+        background-color: $color !important;
+      }
+    }
+  }
+}

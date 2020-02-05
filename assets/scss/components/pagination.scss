@@ -1,0 +1,13 @@
+.pagination {
+  &__btn {
+    min-width: 31px;
+
+    &-next-prev {
+      cursor: pointer;
+
+      &:hover, &:focus {
+        color: darken(map-get($theme-colors, 'indigo-sherwin-williams'), 15%);
+      }
+    }
+  }
+}

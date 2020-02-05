@@ -1,0 +1,83 @@
+$color-primary: rgb(237,41,69) !default; // #ED2945
+$color-success: rgb(40, 167, 70) !default; // #28a745
+$color-text-danger: rgb(220,53,70) !default; // #dc3545
+$color-text-warning: rgb(255, 193, 7) !default; // #ffc107
+
+$color-black: rgb(0,0,0) !default; // #000000
+$color-white: rgb(255,255,255) !default; // #FFFFFF
+$color-info: rgb(23, 163, 184) !default; // #17a2b8
+$color-link-blue: rgb(0, 0, 255) !default; // #0000FF
+$color-darkest-grey: rgb(119, 119, 119) !default; // #777
+$color-darker-grey: rgb(136, 136, 136) !default; // #888
+$color-dark-grey: rgb(153, 153, 153) !default; // #999
+$color-grey: rgb(190, 190, 190) !default; // #bbb
+$color-light-grey: rgb(204, 204, 204) !default; // #ccc
+$color-lighter-grey: rgb(221, 221, 221) !default; // #ddd
+$color-lightest-grey: rgb(248, 248, 251) !default; // #F8F8FB
+
+$color-sonata-pittsburgh: rgb(175, 201, 214) !default; // #AFC9D6
+$color-sea-sparkle-valspar: rgb(168, 199, 205) !default; // #A8C7CD
+$color-indigo-sherwin-williams: rgb(49, 74, 110) !default; // #314A6E
+
+$theme-colors: (
+  "text-danger": $color-text-danger,
+  "text-warning": $color-text-warning,
+  "text-success": $color-success,
+  "black": $color-black,
+  "white": $color-white,
+  "info": $color-info,
+  "link-blue": $color-link-blue,
+  "darkest-grey": $color-darkest-grey,
+  "darker-grey": $color-darker-grey,
+  "dark-grey": $color-dark-grey,
+  "grey": $color-grey,
+  "light-grey": $color-light-grey,
+  "lighter-grey": $color-lighter-grey,
+  "lightest-grey": $color-lightest-grey,
+  "sonata-pittsburgh": $color-sonata-pittsburgh,
+  "sea-sparkle-valspar": $color-sea-sparkle-valspar,
+  "indigo-sherwin-williams": $color-indigo-sherwin-williams,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  l: 1200px,
+  xl: 1366px
+);
+
+$xxs: $font-size-base * 0.8;
+$xs: $font-size-base * 1;
+$sm: $font-size-base * 1.2;
+$md: $font-size-base * 1.6;
+$m: $font-size-base * 1.8;
+$lg: $font-size-base * 2.6;
+$xl: $font-size-base * 3.125;
+$xxl: $font-size-base * 4.7;
+
+$font-size-map: (
+  (auto): 'auto',
+  (xxs): ($xxs),
+  (xs): ($xs),
+  (sm): ($sm),
+  (md): ($md),
+  (m): ($m),
+  (lg): ($lg),
+  (xl): ($xl),
+  (xxl): ($xxl)
+);
+
+$transition-speed: .2s;
+$formElementHeight: 70px;
+$sidebarWidth: 280px;
+$sidebarClosedOffset: 200px;
+$sidebarZindex: 3000;
+$sidebarWidthOffset: #{$sidebarWidth};
+
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 3rem;
